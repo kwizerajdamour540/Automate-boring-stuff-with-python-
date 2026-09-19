@@ -1,0 +1,11 @@
+import re
+name=input("enter word to count vowel inside:\n")
+obj=re.compile(r'[aiuoeAIUOE]')
+print(len(obj.findall(name)))
+print("i'm gonna fint god word in sentence:\n")
+obj2=re.compile(r'.god')
+print(obj2.findall(name))
+count=input("enter sentence you want i'm gonna count with out considering space:\n")
+obj3=re.compile(r'[A-Za-z]')
+print(f"you got {obj3.findall(count)} characters!!!")
+print(f"don't worry about length of your character is {len(obj3.findall(count))}")
